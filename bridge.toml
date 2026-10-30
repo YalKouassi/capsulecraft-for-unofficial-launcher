@@ -19,6 +19,9 @@ bundle_id = "com.capsuleos.app"   # identifier in upstream's tauri.conf.json
 msi_publisher = "capsuleos"       # Manufacturer in upstream's MSI
 website = "https://github.com/kostyk348/CapsuleCraft"
 color = "#a0784f"
+# Upstream's MSI installs the program as capsuleos.exe (its Tauri binary name), not
+# capsulecraft.exe; listing that as a former id lets the launcher find the installed program.
+former_ids = ["capsuleos"]
 
 [icon]
 url = "https://raw.githubusercontent.com/{upstream}/{tag}/src-tauri/icons/128x128@2x.png"
